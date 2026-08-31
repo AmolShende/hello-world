@@ -32,7 +32,7 @@ pipeline {
                 deploy(
                     adapters: [
                         tomcat9(
-                            credentialsId: 'TomcatServer',
+                            credentialsId: 'tomcat_credential',
                             path: '',
                             url: 'http://172.31.7.88:8090'
                         )
